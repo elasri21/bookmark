@@ -24,7 +24,7 @@
             </div>
 
         </header>
-        <div id="mobile-head">
+        <div id="mobile-head" role="banner">
             <div class="top-head">
                 <div class="logo-pt"><img src="images/logo-bookmark.svg" alt=""><span class="logo-span">BOOKMARK</span></div>
                 <div class="close-btn">
@@ -33,7 +33,7 @@
             </div>
             <div class="our-links">
                 <div class="mobile-link">
-                    <ul>
+                    <ul role="navigation">
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Pricing</a></li>
                         <li><a href="#" class="last">Contact</a></li>
@@ -171,9 +171,11 @@
                 <p>35,000+ already joined</p>
                 <h3>Stay up-to-date with what we’re doing</h3>
                 <form>
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
-                    <img src="images/icon-error.svg" alt="" class="error">
-                    <p class="error-msg">Please enter a valid email</p>
+                    <div class="email">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
+                        <img src="images/icon-error.svg" alt="" class="error">
+                        <p class="error-msg">Please enter a valid email</p>
+                    </div>
                     <input type="submit" id="submit" value="Contact Us">
                 </form>
             </div>

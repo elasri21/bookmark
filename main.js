@@ -1,9 +1,15 @@
 $(document).ready(function(){
+    $('button').attr('type', 'button')
+    $('img').attr('aria-hidden', 'true')
     let show = document.querySelectorAll('.question')
     show.forEach(btn => {
         btn.addEventListener('click', function(e){
+            $('.question').css({color: 'hsl(229, 31%, 21%)'})
             $('.q-a p').css({display: "none"})
+            $('img.show-answer').css({Transform: "rotate(0deg)"})
             $(this).siblings('p.answer').css({display: "block"})
+            $(this).css({color: 'hsl(0, 94%, 66%)'})
+            $(this).siblings('img.show-answer').css({Transform: "rotate(180deg"})
         })
     })
 
@@ -35,9 +41,13 @@ $(document).ready(function(){
         showPannel[i].addEventListener('click', function(e){
             $('.show-pannel > div').css({borderBottom
             : "none"})
+            $('.show-pannel > div span').css({
+                color: 'hsl(229, 8%, 60%)'})
             $(this).css({borderBottomSyze: "2px",
             borderBottomStyle: "solid",
-            borderBottomColor: "hsl(0, 94%, 66%)"})
+            borderBottomColor: "hsl(0, 94%, 66%)",
+            color: 'hsl(0, 94%, 66%)'})
+            $(this).children('span').css({color: 'hsl(0, 94%, 66%)'})
             $('.pannel').css({display: "none"})
                 for(let j=0; j<pannels.length; j++){
                     if(j===i && page.clientWidth > 375){

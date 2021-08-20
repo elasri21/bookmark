@@ -116,7 +116,7 @@ header .login button:hover {
 }
 /*mobile head*/
 #mobile-head {
-  background-color: hsl(229, 31%, 21%);
+  background-color: hsl(229, 31%, 21%, 0.7);
   color: hsl(229, 8%, 60%);
   padding: 10px;
   display: none;
@@ -130,8 +130,8 @@ header .login button:hover {
 }
 .logo-span {
   position: absolute;
-  left: 30px;
-  font-size: 20px;
+  left: 36px;
+  font-size: 21px;
   font-weight: 400;
   color: hsl(0, 0%, 100%);
 }
@@ -437,7 +437,7 @@ main div img {
 }
 .q-a h3 {
   font-weight: 500;
-  border-top: 1px solid hsl(229, 8%, 60%);
+  width: 80%;
   padding: 15px 0;
   margin-bottom: 0;
   cursor: pointer;
@@ -448,6 +448,7 @@ main div img {
 
 .q-a > div {
   position: relative;
+  border-top: 1px solid hsl(229, 8%, 60%);
 }
 .q-a img {
   position: absolute;
@@ -493,11 +494,15 @@ main div img {
 .up > h3 {
   color: hsl(229, 8%, 100%);
   font-size: 20px;
+  font-weight: 500;
   letter-spacing: 2px;
-  word-spacing: 5px;
+  word-spacing: 3px;
 }
-form {
+.email {
   position: relative;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
 }
 input {
   padding: 8px 10px;
@@ -517,17 +522,15 @@ input {
   text-align: left;
   padding: 7px 5px;
   width: 300px;
-  position: absolute;
-  top: 64px;
-  left: 226px;
+  margin-right: auto;
+  margin-left: auto;
 
   opacity: 0;
 }
 @media screen and (max-width: 375px) {
   .error-msg {
     width: 90%;
-    top: 34px;
-    left: 15px;
+    margin-top: -15px;
   }
 }
 
@@ -563,15 +566,15 @@ input {
 }
 .error {
   position: absolute;
-  top: 36px;
-  left: 497px;
+  top: 7px;
+  left: 270px;
   display: none;
 }
 
 @media screen and (max-width: 375px) {
   .error {
     top: 7px;
-    left: 237px;
+    left: 255px;
   }
 }
 .links {
@@ -615,12 +618,6 @@ footer ul {
     width: 100%;
     margin-bottom: 15px;
   }
-  footer ul li a {
-    margin-right: 0;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
 }
 
 footer ul li a {
@@ -630,6 +627,14 @@ footer ul li a {
 }
 footer ul li a:last-of-type {
   margin-right: 0px;
+}
+@media screen and (max-width: 375px) {
+  footer ul li a {
+    margin-right: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 .social a {
   display: inline-block;
