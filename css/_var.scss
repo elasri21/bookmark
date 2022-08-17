@@ -1,0 +1,15 @@
+// family
+$family: "Rubik", sans-serif;
+$size: 18px;
+
+// colors
+$heading-color: hsl(229, 31%, 21%);
+$heading-color-with-opacity: hsla(229, 31%, 21%, 0.7);
+$text-color: hsl(229, 8%, 60%);
+$red: hsl(0, 94%, 66%);
+$white: hsl(0, 0%, 100%);
+$blue-bg: hsl(231, 69%, 60%);
+
+// break point
+$small: '(min-width: 768px)';
+$mobile: '(max-width: 767px)';

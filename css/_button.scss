@@ -1,0 +1,69 @@
+button {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid $white;
+    transition: 0.3s ease-in-out;
+    &.login {
+        background-color: $red;
+        color: $white;
+        border-color: $red;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        &:hover {
+            background-color: $white;
+            color: $red;
+        }
+    }
+    &.google-btn {
+        background-color: $blue-bg;
+        color: $white;
+        &:hover {
+            border-color: $blue-bg;
+            color: $blue-bg;
+            background-color: $white;
+        }
+    }
+    &.fire-btn {
+        color: $text-color;
+        &:hover {
+            border-color: $text-color;
+            background-color: $white;
+        }
+    }
+    &.pannel-btn {
+        background-color: $blue-bg;
+        color: $white;
+        &:hover {
+            color: $blue-bg;
+            border-color: $blue-bg;
+            background-color: $white;
+        }
+    }
+    &.ext-btn {
+        background-color: $blue-bg;
+        color: $white;
+        &:hover {
+            background-color: $white;
+            color: $blue-bg;
+            border-color: $blue-bg;
+        }
+    }
+    &.ask-btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $blue-bg;
+        color: $white;
+        &:hover {
+            color: $blue-bg;
+            border-color: $blue-bg;
+            background-color: $white;
+        }
+    }
+}
